@@ -1,0 +1,56 @@
+<div class="full-black">
+  <div class="container info-geral-card">
+    <div class="grid grid-cols-4">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Total de Títulos</div>
+        </div>
+        <div class="card-content">
+          <div class="stat-value">{{ totalTitles }}</div>
+          <p class="stat-subtitle">Analisados</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Ano mais produtivo</div>
+        </div>
+        <div class="card-content">
+          <div class="stat-value">{{ mostProductiveYear }}</div>
+          <p class="stat-subtitle">{{ mostProductiveYearCount}} Títulos</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Filmes</div>
+        </div>
+        <div class="card-content">
+          <div class="stat-value">{{ totalMovies }}</div>
+          <p class="stat-subtitle">Analisados</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Séries</div>
+        </div>
+        <div class="card-content">
+          <div class="stat-value">{{ totalSeries }}</div>
+          <p class="stat-subtitle">Analisados</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title-large">Análise Temporal Completa</div>
+        <div class="card-description">Quantidade de filmes e séries analisados</div>
+      </div>
+      <div class="card-content">
+        <div class="chart-placeholder">
+          <canvas #pieCanvas></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

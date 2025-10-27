@@ -1,0 +1,47 @@
+<div class="full-black">
+  <div class="container grid grid-cols-3">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Filme com melhor avaliação</div>
+      </div>
+      <div class="card-content">
+        <div class="stat-value primary">{{ bestRatedMovie.title }}</div>
+        <p class="stat-subtitle">{{ bestRatedMovie.percentage }}% em relação a nota máxima 10</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Gênero em Alta</div>
+      </div>
+      <div class="card-content">
+        <div class="stat-value primary">{{ topGenreInfo.name }}</div>
+        <p class="stat-subtitle">{{ topGenreInfo.percentage }}% dos filmes populares</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Filme mais popular do momento</div>
+      </div>
+      <div class="card-content">
+        <div class="stat-value primary">{{ mostPopularMovie.title }}</div>
+        <p class="stat-subtitle">{{ mostPopularMovie.percentage }}% de popularidade em relação ao total</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container grid grid-cols-2">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title-large">Tendências de gênero</div>
+        <div class="card-description">Em filmes e séries</div>
+      </div>
+      <div class="card-content">
+        <div class="chart-placeholder chart-placeholder-small">
+          <canvas #genreChart ></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

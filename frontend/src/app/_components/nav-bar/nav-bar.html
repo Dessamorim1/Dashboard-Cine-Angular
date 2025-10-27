@@ -1,0 +1,51 @@
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <rect width="18" height="18" x="3" y="3" rx="2" />
+        <path d="m16 10-4-4-4 4" />
+      </svg>
+      <h1>CineData Analytics</h1>
+    </div>
+    <p class="subtitle">Dashboard de análise organizado por categorias</p>
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <ul class="navbar-nav justify-content-center">
+      <li class="nav-item">
+        <a routerLink="/dashboard" routerLinkActive="active" class="nav-link" [routerLinkActiveOptions]="{ exact: true }">
+          Início
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/filmes" routerLinkActive="active" class="nav-link">
+          Filmes
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/series" routerLinkActive="active" class="nav-link">
+          Séries
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/generos" routerLinkActive="active" class="nav-link">
+          Genêros
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/tendencias" routerLinkActive="active" class="nav-link">
+          Tendências
+        </a>
+      </li>
+      <li class="nav-item">
+          <a routerLink="/" routerLinkActive="active" class="nav-link" [routerLinkActiveOptions]="{ exact: true }">
+          Sair
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
